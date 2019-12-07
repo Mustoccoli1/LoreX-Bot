@@ -66,7 +66,7 @@ client.on('ready', () => { //Startup
   console.log("Bot on!");
   client.user.setUsername("Knight");
   client.user.setStatus('online');
-  client.user.setActivity(`on ${client.users.size} users | #help`, {
+  client.user.setActivity(`on ${client.users.size} users | !help`, {
     type: 'WATCHING'
   });
 });
@@ -85,7 +85,7 @@ client.on('guildCreate', guild => { // If the Bot was added on a server, proceed
   const chan = client.channels.get("471603875749691393");
   
   config[guild.id] = {
-    prefix: '#',
+    prefix: '!',
     delete: 'true',
     deleteTime: 10000,
     volume: 100,
