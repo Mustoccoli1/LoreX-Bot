@@ -64,7 +64,7 @@ client.on("error", e => {
 
 client.on('ready', () => { //Startup
   console.log("Bot on!");
-  client.user.setUsername("expoBot");
+  client.user.setUsername("Knight");
   client.user.setStatus('online');
   client.user.setActivity(`on ${client.users.size} users | #help`, {
     type: 'WATCHING'
